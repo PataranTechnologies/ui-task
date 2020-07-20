@@ -25,8 +25,8 @@ const ShowPricing = () => {
                 {prices.map(pricing => {
                     return (
                         <div className={styles.row}>
-                            <p className={styles.quantity}>{pricing.quantity}</p>
-                            <p className={styles.price}>{pricing.price}</p>
+                            <p className={styles.quantity}>>={pricing.quantity}</p>
+                            <p className={styles.price}>${pricing.price}</p>
                         </div>
                     );
                 })}

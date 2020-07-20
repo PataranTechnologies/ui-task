@@ -21,19 +21,9 @@
       "price": 0.35
     },
     {
-      "id": 5,
-      "quantity": 200,
-      "price": 0.3
-    },
-    {
       "id": 6,
       "quantity": 10000,
       "price": 1
-    },
-    {
-      "quantity": 30000,
-      "price": 3,
-      "id": 8
     }
   ]
 }

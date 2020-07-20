@@ -35,6 +35,10 @@ const PriceEdit = () => {
   };
 
   const updatePricesHandler = async () => {
+    if(input.quantity === '' || input.price === ''){
+      setShowInput(!showInput);
+      return;
+    }
     await fetch("http://localhost:3004/prices", {
       method: "POST",
       headers: {
@@ -65,7 +69,7 @@ const PriceEdit = () => {
             <TextField
               id="filled-read-only-input"
               label="Quantity >="
-              defaultValue={input.quantity}
+              value={input.quantity}
               InputProps={{
                 readOnly: true,
               }}
@@ -75,7 +79,7 @@ const PriceEdit = () => {
             <TextField
               id="filled-read-only-input"
               label="Price"
-              defaultValue={input.price}
+              value={input.price}
               InputProps={{
                 readOnly: true,
               }}
